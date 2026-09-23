@@ -12,8 +12,6 @@
 
 https://github.com/user-attachments/assets/3455839e-b984-476d-8c80-55e6e5852136
 
-[▶ 观看 MP4 演示](https://github.com/kkfor30/kk-hero-handoff/blob/main/assets/readme/demo.mp4) · [下载视频](https://raw.githubusercontent.com/kkfor30/kk-hero-handoff/main/assets/readme/demo.mp4)
-
 约 8 秒实际网页录屏，展示居中播放、缩小回位、文字出现与静态首屏接管。上方插画仅解释原理，真实效果以此视频为准；回位目标由你的页面布局决定，不局限于右侧。
 
 ## 你负责想法，Agent 帮你落地
@@ -57,7 +55,7 @@ https://github.com/user-attachments/assets/3455839e-b984-476d-8c80-55e6e5852136
 | 已有入场但衔接不佳 | 定位素材、位置或时序问题 → 针对性修复 |
 | 还没有静态页面 | 先完成页面与最终构图，再开始接入 |
 
-视频生成好后：
+视频生成好后，把实际文件位置告诉 Agent。下面的 `assets/intro.mp4` 和 `assets/hero-rest.png` 只是相对于网站项目根目录的路径示例，不是 Skill 要求建立的目录或固定文件名。可以换成项目已有路径或本机绝对路径，无需移动素材。这段话是发送给 Agent 的指令，不是终端命令：
 
 ```text
 视频在 assets/intro.mp4，最终静态场景是 assets/hero-rest.png。
