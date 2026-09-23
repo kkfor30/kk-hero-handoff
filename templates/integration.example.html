@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>入场视频接入示例</title>
+<link rel="stylesheet" href="./hero-intro.css">
+<script>
+window.heroIntroBootstrapTimer = setTimeout(() => {
+  document.querySelectorAll('[data-intro-pending]').forEach(el => el.removeAttribute('data-intro-pending'));
+}, 8000);
+</script>
+<noscript><style>[data-intro-pending] [data-hero-intro-static],[data-intro-pending] [data-hero-intro-ui]{visibility:visible}</style></noscript>
+</head>
+<body>
+<!-- 将下面结构适配到现有页面，不用此示例重建整个网站。 -->
+<section data-hero-intro data-intro-pending data-intro-src="./intro.mp4">
+  <img data-hero-intro-static src="./hero-rest.png" width="1440" height="1080" alt="首屏场景" style="display:block;width:100%;height:auto">
+  <div data-hero-intro-ui><h1>你的现有标题</h1></div>
+  <button type="button" id="skip">跳过入场</button>
+</section>
+<script type="module">
+import { createHeroIntro } from './hero-intro.js';
+const root = document.querySelector('[data-hero-intro]');
+try {
+  const response = await fetch('./handoff.json');
+  if (!response.ok) throw new Error('接管记录未加载');
+  const report = await response.json();
+  const intro = createHeroIntro(root, { handoffTime: report.handoffTime });
+  window.addEventListener('hero-intro:ready', () => { document.getElementById('skip').hidden = true; }, { once: true });
+  document.getElementById('skip').onclick = () => intro.skip();
+  intro.start();
+} catch (error) {
+  root.removeAttribute('data-intro-pending');
+  clearTimeout(window.heroIntroBootstrapTimer);
+  document.getElementById('skip').hidden = true;
+  console.error('入场未启用，保留静态页面', error);
+}
+</script>
+</body>
+</html>

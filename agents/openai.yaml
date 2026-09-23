@@ -1,0 +1,6 @@
+interface:
+  display_name: "kk-hero-handoff"
+  short_description: "指导入场素材准备与网页接入，实现视频居中播放、回位及首屏衔接"
+  default_prompt: "使用 $kk-hero-handoff 检查当前首屏和素材，指导缺失素材的准备，并实现入场视频居中播放、回位及静态首屏衔接。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,21 @@
+/* 静态场景始终保留布局空间；状态类只作用于当前 Hero。 */
+[data-intro-pending] [data-hero-intro-static],
+[data-intro-pending] [data-hero-intro-ui],
+.hi-active:not(.hi-handoff) [data-hero-intro-static] { visibility: hidden; }
+.hi-active:not(.hi-reveal) [data-hero-intro-ui] { opacity: 0; visibility: hidden; }
+.hi-active [data-hero-intro-ui] { pointer-events: none; }
+.hi-active.hi-reveal [data-hero-intro-ui] {
+  visibility: visible; opacity: 1;
+  animation: hi-ui-in var(--hi-reveal-ms, 400ms) ease both;
+}
+@keyframes hi-ui-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+.hero-intro-overlay {
+  position: fixed; z-index: 10000; overflow: hidden; pointer-events: none;
+  opacity: 0; background: transparent;
+  transition: opacity var(--hi-crossfade-ms, 160ms) linear;
+}
+.hero-intro-overlay video { display: block; width: 100%; height: 100%; object-fit: contain; }
+@media (prefers-reduced-motion: reduce) {
+  .hi-active.hi-reveal [data-hero-intro-ui] { animation: none; }
+  .hero-intro-overlay { transition: none; }
+}

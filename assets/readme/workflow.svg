@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="470" viewBox="0 0 1200 470" role="img" aria-labelledby="title desc">
+<title id="title">KK Hero Handoff — 从视频到网页</title>
+<desc id="desc">三阶段示意：视频居中播放，舞台缩小回位，文字与静态首屏接管。这是机制示意，不是真实页面截图。</desc>
+<rect width="1200" height="470" rx="24" fill="#101d2c"/>
+<g font-family="Segoe UI,Arial,sans-serif" fill="#f4f7fa">
+<text x="52" y="72" font-size="42" font-weight="700">A scene. A landing. A handoff.</text>
+<text x="52" y="108" font-size="20" fill="#aebecf">KK HERO HANDOFF / VIDEO → WEB</text>
+<g id="centered-video">
+<rect x="52" y="155" width="324" height="214" rx="12" fill="#eaf0f5"/>
+<rect x="111" y="187" width="206" height="148" rx="8" fill="#397d99"/>
+<path d="M198 231 L198 287 L240 259 Z" fill="#eaf0f5"/>
+<text x="52" y="416" font-size="26" font-weight="600">01  PLAY CENTERED</text>
+</g>
+<path d="M390 261 H426 M416 251 L428 261 L416 271" fill="none" stroke="#6fdbcc" stroke-width="3"/>
+<g id="return-to-layout">
+<rect x="438" y="155" width="324" height="214" rx="12" fill="#eaf0f5"/>
+<rect x="482" y="181" width="206" height="148" rx="8" fill="none" stroke="#90b4c2" stroke-width="2" stroke-dasharray="7 7"/>
+<rect x="591" y="230" width="143" height="107" rx="6" fill="#397d99"/>
+<path d="M568 211 Q616 210 637 244" stroke="#163349" stroke-width="3" fill="none"/>
+<path d="M626 240 L640 249 L639 233" fill="none" stroke="#163349" stroke-width="3"/>
+<text x="438" y="416" font-size="26" font-weight="600">02  RETURN TO PLACE</text>
+</g>
+<path d="M776 261 H812 M802 251 L814 261 L802 271" fill="none" stroke="#6fdbcc" stroke-width="3"/>
+<g id="static-handoff">
+<rect x="824" y="155" width="324" height="214" rx="12" fill="#eaf0f5"/>
+<rect x="977" y="230" width="143" height="107" rx="6" fill="#397d99"/>
+<path d="M1044 260 L1056 278 L1044 296 L1032 278 Z" fill="#b3f1e4"/>
+<path d="M853 236 H943 M853 254 H925 M853 281 H937 M853 294 H920" stroke="#27445a" stroke-width="7"/>
+<rect x="851" y="317" width="64" height="17" rx="8" fill="#64b6ae"/>
+<text x="824" y="416" font-size="26" font-weight="600">03  REVEAL THE HERO</text>
+</g>
+</g>
+</svg>
