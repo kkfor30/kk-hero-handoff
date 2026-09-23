@@ -10,7 +10,7 @@
 
 ## 看实际效果
 
-[![点击观看实际网页录屏：入场视频居中播放、缩小回位，随后文字与静态首屏接管。](assets/readme/demo-poster.jpg)](https://github.com/kkfor30/kk-hero-handoff/blob/main/assets/readme/demo.mp4)
+https://github.com/user-attachments/assets/3455839e-b984-476d-8c80-55e6e5852136
 
 [▶ 观看 MP4 演示](https://github.com/kkfor30/kk-hero-handoff/blob/main/assets/readme/demo.mp4) · [下载视频](https://raw.githubusercontent.com/kkfor30/kk-hero-handoff/main/assets/readme/demo.mp4)
 
