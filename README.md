@@ -2,6 +2,8 @@
 
 **让入场视频自然回到网页，接上你的静态首屏。**
 
+![入场衔接原理插画：黄卫衣人物、KK 与垂耳小狗组成同一场景，从居中播放到缩小回位，再由静态首页接管。](assets/readme/hero-illustration-v1.webp)
+
 面向已有静态网站的 AI 编程 Skill：指导入场素材准备，让视频先在屏幕中央播放，在尾部回到主视觉位置，文字同步出现，最后交接给静态 Hero。
 
 [开始使用](#开始使用) · [素材准备](references/material-preparation.md) · [接入参数](references/integration.md) · [报告问题](https://github.com/kkfor30/kk-hero-handoff/issues)
@@ -10,18 +12,9 @@
 
 [![点击观看实际网页录屏：入场视频居中播放、缩小回位，随后文字与静态首屏接管。](assets/readme/demo-poster.jpg)](https://github.com/kkfor30/kk-hero-handoff/blob/main/assets/readme/demo.mp4)
 
-**[▶ 观看完整 MP4 演示（约 8 秒）](https://github.com/kkfor30/kk-hero-handoff/blob/main/assets/readme/demo.mp4)** · [下载视频](https://raw.githubusercontent.com/kkfor30/kk-hero-handoff/main/assets/readme/demo.mp4)
+[▶ 观看 MP4 演示](https://github.com/kkfor30/kk-hero-handoff/blob/main/assets/readme/demo.mp4) · [下载视频](https://raw.githubusercontent.com/kkfor30/kk-hero-handoff/main/assets/readme/demo.mp4)
 
-这是作者网站的实际录屏，不是生成视频素材本身。展示的是居中播放 → 缩小回位 → 文字出现与静态首页接管；点击封面打开视频文件页观看。
-
-<details>
-<summary>展开查看：这三个步骤如何衔接</summary>
-
-![入场衔接示意：中央播放视频，随后缩小回位，静态首屏与文字接管。此图为流程示意，不是真实页面截图。](assets/readme/workflow.svg)
-
-回位目标由你的页面布局决定，不局限于右侧。实际动作来自你提供的视频，视觉效果需要在自己的页面验收。
-
-</details>
+约 8 秒实际网页录屏，展示居中播放、缩小回位、文字出现与静态首屏接管。上方插画仅解释原理，真实效果以此视频为准；回位目标由你的页面布局决定，不局限于右侧。
 
 ## 你负责想法，Agent 帮你落地
 
@@ -111,7 +104,7 @@ intro.start();
 ## 当前边界
 
 - 适合已有静态首屏，不会从零设计整个网站。
-- 不包含生成平台密钥、私人素材或项目历史；README 仅附作者提供的公开演示录屏与封面，运行 Skill 不依赖它们。
+- 不包含生成平台密钥、私人素材或项目历史；README 的公开演示录屏、封面与原理插画仅用于说明，运行 Skill 不依赖它们。
 - 通用模板使用独立视频层。复杂祖先蒙版、滤镜、旋转或裁剪布局需要针对性适配。
 - 不能保证视频模型一次生成满意动作，也不能保证任意两张不同构图通过淡出就能接上。
 - 自动化检查验证规格和运行逻辑；动作自然度、颜色与接缝仍需用户验收。
